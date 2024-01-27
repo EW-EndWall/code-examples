@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example Estate - Products</title>
+    <title>Example Estate - Product details</title>
     <meta
       name="description"
       content="Are you currently on the quest to find your ideal home sweet home,
@@ -97,181 +97,34 @@
         </div>
       </div>
     </header>
-    <div class="container">
-      <div class="bg-secondary rounded my-4 mx-2 p-3">
-        <!--  -->
-        <h2
-          class="bg-box rounded p-3 text-uppercase fw-bold fs-3 text-center wow fadeInUp"
-          data-wow-delay="0.3s"
-        >
-          list of products
-        </h2>
-        <div
-          class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 p-3 text-capitalize text-center"
-        >
-          <!--  -->
-          <div class="col wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card shadow-sm bg-box h-100">
-              <div class="w-100 position-relative" height="200">
-                <img
-                  src="/assets/img/residence-2219972_640.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded object-fit-cover"
-                />
-                <div
-                  class="text-body-secondary position-absolute top-0 bg-box p-2 rounded m-3"
-                >
-                  10.000$
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Adorable 2-bedroom cottage nestled in a quiet neighborhood.
-                  Escape the hustle and bustle in this charming retreat.
-                  Surrounded by nature, yet close to essential amenities.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="/product/1.html"
-                    class="btn btn-sm btn-outline-secondary w-100"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
+    <div class="container my-5 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="card details-card p-0">
+        <div class="row">
+          <div class="col-md-6 col-sm-12 my-auto">
+            <img
+              class="img-fluid p-1"
+              src="/assets/img/san-francisco-4674351_640.jpg"
+              style="border-radius: 0.5rem"
+            />
+          </div>
+          <div class="col-md-6 col-sm-12 description-container p-5 bg-box">
+            <div class="main-description">
+              <p class="product-category mb-0">Sell</p>
+              <h3>2 + 1 Home</h3>
+              <hr />
+              <p class="product-price">10.000$</p>
+              <router-link class="btn btn-light btn-lg" to="/contact/">
+                Contact Us
+              </router-link>
+              <hr />
+              <p class="mb-4">
+                Bright And Airy Studio Apartment With Floor-To-Ceiling Windows.
+                Enjoy Abundant Natural Light And City Views. Perfect For
+                Professionals Or Students. Make This Stylish Space Your Own!
+              </p>
             </div>
           </div>
-          <div class="col wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card shadow-sm bg-box h-100">
-              <div class="w-100 position-relative" height="200">
-                <img
-                  src="/assets/img/san-francisco-4674351_640.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded object-fit-cover"
-                />
-                <div
-                  class="text-body-secondary position-absolute top-0 bg-box p-2 rounded m-3"
-                >
-                  10.000$
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Bright and airy studio apartment with floor-to-ceiling
-                  windows. Enjoy abundant natural light and city views. Perfect
-                  for professionals or students. Make this stylish space your
-                  own!
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="/product/2.html"
-                    class="btn btn-sm btn-outline-secondary w-100"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card shadow-sm bg-box h-100">
-              <div class="w-100 position-relative" height="200">
-                <img
-                  src="/assets/img/sydney-4078776_640.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded object-fit-cover"
-                />
-                <div
-                  class="text-body-secondary position-absolute top-0 bg-box p-2 rounded m-3"
-                >
-                  10.000$
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Elegant 4-bedroom home with high-end finishes. Features a
-                  gourmet kitchen, private garden, and a luxurious master suite.
-                  Experience the epitome of luxury living in this prestigious
-                  neighborhood.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="/product/3.html"
-                    class="btn btn-sm btn-outline-secondary w-100"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card shadow-sm bg-box h-100">
-              <div class="w-100 position-relative" height="200">
-                <img
-                  src="/assets/img/house-1867187_640.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded object-fit-cover"
-                />
-                <div
-                  class="text-body-secondary position-absolute top-0 bg-box p-2 rounded m-3"
-                >
-                  10.000$
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Spacious 3-bedroom house with a stunning view. Ideal for
-                  families, close to schools and parks. Enjoy the tranquility of
-                  the neighborhood while being just minutes away from the city
-                  center.
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="/product/4.html"
-                    class="btn btn-sm btn-outline-secondary w-100"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col wow fadeInUp" data-wow-delay="0.3s">
-            <div class="card shadow-sm bg-box h-100">
-              <div class="w-100 position-relative" height="200">
-                <img
-                  src="/assets/img/building-7077718_640.jpg"
-                  alt=""
-                  class="w-100 h-100 rounded object-fit-cover"
-                />
-                <div
-                  class="text-body-secondary position-absolute top-0 bg-box p-2 rounded m-3"
-                >
-                  10.000$
-                </div>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Charming 2-bedroom apartment with modern amenities.
-                  Conveniently located near shops, restaurants, and public
-                  transportation. Perfect for urban living. Don't miss out on
-                  this opportunity!
-                </p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <a
-                    href="/product/5.html"
-                    class="btn btn-sm btn-outline-secondary w-100"
-                  >
-                    View
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!--  -->
         </div>
-        <!--  -->
       </div>
     </div>
     <footer class="py-3">
