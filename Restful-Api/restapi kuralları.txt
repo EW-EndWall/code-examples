@@ -1,0 +1,35 @@
+https://swagger.io/
+
+url yapısı
+example.com/api/v1/users/id/example
+example.com/api/versiyon/kaynak/id/alt kaynak
+
+get ile veri gönderilmez sorgu arama vs. yani şöyle yapılmalı
+example.com/api/v1/users/id/posts?title="demo"
+
+createUser vs kullanılmamalı coğul isimlendirme kullanılmalı örnek user değil users
+
+GET 	veri getirme					url den sorgu
+POST	veri oluşturma					veri body de
+PUT	veri güncelleme tam yok ise oluştururma		veri body de
+PATCH	veri güncelleme kısmi				veri body de
+UPDATE							veri body de
+DELETE	veri silme					url den silme
+
+HEAD	başlıkları almak ve içeriği almadan bilgi edinme, dosyanın son güncelleme tarihi gibi
+OPTIONS sunucu iletişim testi
+
+2xx (Başarılı durumlar)
+	200 tamam
+	201 Oluşturuldu
+3xx (Yönlendirme durumları)
+	301 Kalıcı Olarak Taşındı
+	304 Değiştirilmedi
+4xx (İstemci kaynaklı hatalar)
+	400 Hatalı İstek
+	401 Yetkisiz - oturum kapalı
+	403 Yasak
+	404 Bulunamadı
+	410 Kalıcı Olarak Silindi veya devre dışı bırakıldı
+5xx (Sunucu kaynaklı hatalar)
+	500 Dahili Sunucu Hatası
