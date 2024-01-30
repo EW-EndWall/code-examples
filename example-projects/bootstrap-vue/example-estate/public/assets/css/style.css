@@ -1,0 +1,23 @@
+body {
+  background-color: beige;
+}
+.bg-box {
+  background-color: rgb(179, 180, 180);
+}
+.bg-title,
+header,
+footer {
+  background-color: rgb(208, 212, 212);
+}
+a.active {
+  color: #212529 !important;
+}
+a {
+  color: #6c757d !important;
+}
+a:hover {
+  color: #2e2f30 !important;
+}
+* {
+  transition: 0.5s;
+}
