@@ -1,0 +1,1 @@
+ActivityPub protokolü, dağıtık ve açık web tabanlı sosyal medya platformları için bir standart olarak kullanılmaktadır.
