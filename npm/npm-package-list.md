@@ -27,3 +27,10 @@
 +-- jsqr			@1.4.0
 +-- nodemon			@3.0.1
 +-- sharp			@0.32.6
+
+nuxtjs vue seo, routing, ssr-ssg
+
+https://tauri.app/ bunada bakılcak masaustu uygulama yapmak için electron alternatifi
+tauri electron a göre daha iyi duruyo dosya boyutu kaynak kullanım ve gereksinimler olarak cok daha hafif
+
+https://playwright.dev/ uygulama test aracı bakılcak
