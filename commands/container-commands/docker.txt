@@ -1,0 +1,79 @@
+İmaj İşlemleri:
+    İmaj indirme: docker pull imageName
+    İmaj listeleme: docker images
+    İmaj silme: docker rmi imageName
+    İmajı yeniden adlandırma: docker tag eskiAd yeniAd
+    İmajı başka bir depoya yükleme: docker push yeniAd
+
+Konteyner İşlemleri:
+    Konteyner oluşturma: docker run imageName
+    Çalışan konteyner listesi: docker ps
+    Tüm konteyner listesi (çalışan ve duran): docker ps -a
+    Konteyner durdurma: docker stop containerID
+    Konteyner silme: docker rm containerID
+    Çalışan bir konteynerın loglarını görüntüleme: docker logs containerID
+    Çalışan bir konteynera bağlı olan portları görüntüleme: docker port containerID
+    Konteyner içindeki bir dosyayı host sistemine kopyalama: docker cp containerID:sourcePath targetPath
+    Çalışan bir konteynerın istatistiklerini görüntüleme: docker stats containerID
+    Konteynera kaynak sınırları atama (CPU, bellek): docker run --cpus="0.5" --memory="512m" imageName
+
+Konteyner İçine Giriş:
+    Bash kabuğuna giriş: docker exec -it containerID /bin/bash
+
+Docker Ağları:
+    Ağ listesi: docker network ls
+    Yeni ağ oluşturma: docker network create networkName
+    Ağ detayları görüntüleme: docker network inspect networkName
+    Bir konteynera özel bir ağ atama: docker network connect networkName containerID
+    Ağdaki bir konteynerın IP adresini bulma: docker inspect --format='{{range .NetworkSettings.Networks}}{{.IPAddress}}{{end}}' containerID
+
+Docker Volume İşlemleri:
+    Bir volume oluşturma: docker volume create volumeName
+    Volume bilgilerini görüntüleme: docker volume inspect volumeName
+
+---------------------------------------------------------------------------------------
+
+Swarm Başlatma:
+    Swarm modunu başlatma: docker swarm init
+    Bir çalışanı Swarm'a katılması için etkinleştirme komutu üretme: docker swarm join-token worker
+    Bir yöneticiyi Swarm'a katılması için etkinleştirme komutu üretme: docker swarm join-token manager
+
+Swarm Hizmet İşlemleri:
+    Hizmetleri listeleme: docker service ls
+    Hizmet ayrıntılarını görüntüleme: docker service inspect serviceName
+    Yeni bir hizmet başlatma: docker service create serviceName
+
+Hizmet Güncelleme ve Ölçekleme:
+    Bir hizmeti güncelleme: docker service update serviceName
+    Hizmeti belirli bir ölçeğe getirme: docker service scale serviceName=replicaCount
+
+Swarm Görevleri:
+    Swarm'da çalışan görevleri listeleme: docker node ps nodeName
+
+Swarm Durumu ve Bilgiler:
+    Swarm durumu ve ayrıntıları: docker info
+    Swarm'daki düğümleri listeleme: docker node ls
+    Swarm'daki bir düğümün ayrıntılarını görüntüleme: docker node inspect nodeName
+
+Swarm Kapatma:
+    Swarm modunu kapatma: docker swarm leave --force (bir düğümde çalıştırılmalıdır)
+
+---------------------------------------------------------------------------------------
+
+Docker Güvenlik:
+    Güvenlik taraması yapma (Docker Bench Security): docker run -it --net host --pid host --userns host --cap-add audit_control -e DOCKER_CONTENT_TRUST=$DOCKER_CONTENT_TRUST -v /var/lib:/var/lib -v /var/run/docker.sock:/var/run/docker.sock -v /usr/lib/systemd:/usr/lib/systemd -v /etc:/etc --label docker_bench_security docker/docker-bench-security
+
+Docker Kaynaklarını Temizleme:
+    Kullanılmayan imajları, konteynerları ve volumeleri temizleme: docker system prune
+
+Docker Sistem Bilgileri:
+    Docker hakkında sistem bilgileri: docker info
+    Docker versiyonunu görüntüleme: docker version
+
+Docker Hub ile İlgili İşlemler:
+    Docker Hub üzerinde arama: docker search searchTerm
+    Docker Hub üzerinden oturum açma: docker login
+    Docker Hub üzerinden oturumu kapatma: docker logout
+
+Docker API ile İlgili İşlemler:
+    Docker API'yi kullanarak çeşitli işlemler gerçekleştirme: curl -s --unix-socket /var/run/docker.sock http://localhost/images/json

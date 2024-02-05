@@ -1,0 +1,85 @@
+Depo Oluşturma ve Klonlama:
+    git init: Yeni bir Git deposu oluşturur.
+    git clone <repo-url>: Uzak bir depoyu bilgisayarınıza kopyalar.
+
+Değişiklikleri İzleme:
+    git status: Değişiklikleri kontrol etmek için kullanılır.
+    git add <dosya>: Değişiklikleri stage'e ekler.
+    git mv <eski-dosya-adı> <yeni-dosya-adı>: Dosya adı değiştirmek için.
+    git commit -m "Commit mesajı": Stage'deki değişiklikleri bir commit olarak kaydeder.
+    git commit --amend: Son commit'i değiştirir veya düzenler.
+    git show <commit>:<dosya>: Belirli bir commit'teki dosyanın içeriğini gösterir.
+    
+Güncelleme ve Senkronizasyon:
+    git pull: Uzak depodan güncelleme alır.
+    git push origin <branch-adı>: Yerel deponuzdaki değişiklikleri uzak depoya gönderir.
+
+Branch İşlemleri:
+    git branch: Mevcut brancharı listeler.
+    git branch <branch-adı>: Yeni bir branch oluşturur.
+    git branch -d <branch-adı>: Bir branch'i siler.
+    git branch -m <yeni-branch-adı>: Mevcut branch'in adını değiştirir.
+    git checkout <branch-adı>: Başka bir branch'a geçiş yapar.
+    git merge <branch-adı>: Bir branch'i mevcut branch ile birleştirir.
+    git push origin --delete <branch-adı>: Uzak depodaki bir branch'i siler.
+
+Uzak Depo İşlemleri (GitHub için):
+    git remote add origin <repo-url>: Uzak depoyu ekler.
+    git remote -v: Uzak depoları listeler.
+
+------------------------------------------------------------------------------------------
+
+Değişiklikleri Geri Alma:
+    git reset <dosya>: Stage'e eklenmiş değişiklikleri geri alır.
+    git reset --hard HEAD: Tüm değişiklikleri en son commit'e geri alır.
+
+Değişiklikleri İnceleme:
+    git diff: İki commit arasındaki değişiklikleri gösterir.
+    git show <commit-id>: Belirli bir commit'in detaylarını gösterir.
+
+Tag (Etiket) İşlemleri:
+    git tag <tag-adı>: Bir etiket oluşturur.
+    git tag -a <tag-adı> -m "Etiket açıklaması": Açıklamalı bir etiket oluşturur.
+
+Stash Kullanımı:
+    git stash: Çalışma dizinizdeki geçici değişiklikleri saklar.
+    git stash pop: En son saklanan değişiklikleri geri getirir.
+    git stash list: Stash listesini gösterir.
+    git stash apply: En son stash'i uygular.
+    git stash apply stash@{n}: Belirli bir stash'i uygular.
+
+Gitignore Kullanımı:
+    .gitignore dosyası oluşturarak, belirli dosyaların ve klasörlerin izlenmesini önleyebilirsiniz.
+
+Cherry Pick:
+    git cherry-pick <commit-id>: Belirli bir commit'i mevcut branch'e ekler.
+    git cherry-pick -n <commit1> <commit2> ...: Birden fazla commit'i işlemek için.
+    git cherry-pick <commit> -m <parent-number>: Değişiklikleri Başka Bir Branch'e Taşıma, Çoklu ebeveynlere sahip commit'leri birleştirir.
+
+Rebase Kullanımı:
+    git rebase <base-branch>: Mevcut branch'i belirtilen base branch'e göre düzenler.
+
+Bağlantılı Depolar:
+    git submodule add <repo-url>: Alt modül ekler.
+    git submodule update --init --recursive: Alt modülleri günceller.
+    git submodule update --remote: Alt modülleri en son sürümlere günceller.
+
+Bisect:
+    git bisect start: Hata ayıklama sürecini başlatır.
+    git bisect good <commit>: Bir commit'in hatasız olduğunu işaretler.
+    git bisect bad <commit>: Bir commit'in hatalı olduğunu işaretler.
+
+Log Filtrasyonu:
+    git log: Commit geçmişini gösterir.
+    git log --author=<author>: Belirli bir yazarın commit geçmişini gösterir.
+    git log --grep=<pattern>: Belirli bir deseni içeren commit'leri gösterir.
+    git reflog: Referans log'unu gösterir, silinen branch ve commit'leri görmek için kullanışlıdır.
+    git log --graph --oneline --all: Commit geçmişini grafiksel olarak gösterir.
+
+Çalışma Dizinini Temizleme:
+    git clean -fd: Çalışma dizinindeki dizinleri ve dosyaları temizler.
+
+Config Ayarları:
+    git config --global alias.<alias-adı> <komut>: Kısayol alias'ları tanımlar.
+    git config --global user.name "Adınız": Kullanıcı adınızı ayarlar.
+    git config --global user.email "email@example.com": E-posta adresinizi ayarlar.
