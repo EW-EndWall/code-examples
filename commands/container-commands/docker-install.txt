@@ -1,0 +1,43 @@
+Docker Güncelleme ve Kurulum
+
+İlk olarak var ise eski sürüm docker kaldıralım.
+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+
+Güncelleme ve indirmeleri yapalım.
+
+sudo apt-get update
+sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+
+GPG anahtarını ekleyelim.
+
+sudo mkdir -m 0755 -p /etc/apt/keyrings
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+
+Depoyu ayarlayalım.
+
+echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+
+Paket dizinini güncelleyelim.
+
+sudo apt-get update
+
+Docker Engine, containerd ve Docker Compose’u kuralım.
+
+sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+İşlemler biti test etmek isterseniz.
+
+sudo docker run hello-world
+
+-------
+
+Portainer Kurulumu.
+
+sudo docker run --name portainer -d -p 9000:9000 --restart always -v /var/run/docker.sock:/var/run/docker.sock -v /opt/portainer:/data portainer/portainer
