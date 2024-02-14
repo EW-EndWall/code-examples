@@ -36,6 +36,19 @@ export default {
       </ul>
       <hr class="wow fadeInUp" data-wow-delay="0.5s" />
       <div class="wow fadeInUp" data-wow-delay="0.8s">
+        <small>
+          developed by
+          <a
+            href="https://endwall.pw"
+            rel="nofollow"
+            target="_blank"
+            title="Designed by EWT"
+            className="ml-1"
+          >
+            EWT
+          </a>
+        </small>
+        <br />
         <strong>© <span id="currentDate"></span> Company, Inc</strong>
       </div>
     </footer>

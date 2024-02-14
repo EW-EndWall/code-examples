@@ -79,8 +79,9 @@ export default {
       <div class="text-center mt-2 wow fadeInDown" data-wow-delay="0.3s">
         <p id="currentDate">2023-</p>
         <p class="m-0">all rights reserved.</p>
+        <br />
         <small>
-          designed by
+          developed by
           <a
             href="https://endwall.pw"
             rel="nofollow"
