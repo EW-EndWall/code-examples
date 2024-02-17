@@ -1,3 +1,5 @@
+https://github.com/snrylmz/il-ilce-json
+
 deprem ısı haritası
 https://openlayers.org/en/latest/examples/heatmap-earthquakes.html
 
