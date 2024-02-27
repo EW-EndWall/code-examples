@@ -42,4 +42,7 @@ electron-builder: Electron uygulamanızı paketlemek, yayınlamak ve dağıtmak 
 - electron-context-menu: Sağ tıklama menüsü özelleştirmek ve yönetmek için kullanılır.
 - electron-dl: Electron uygulamanızda dosya indirme işlemlerini kolayca yönetmenizi sağlar. bir nevi indirme yöneticisi
 
-bun nodejs in hafif ve daha hızlı geliştirilen modeli
+bun hafif ve daha hızlı geliştirilen modeli
+
+https://electron-vite.org/
+https://tailwindcss.com/docs/guides/vite
