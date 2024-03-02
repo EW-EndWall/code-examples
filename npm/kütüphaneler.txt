@@ -46,3 +46,9 @@ bun hafif ve daha hızlı geliştirilen modeli
 
 https://electron-vite.org/
 https://tailwindcss.com/docs/guides/vite
+
+pinojs JavaScript loglama kütüphanesi Uygulamalarınızın çeşitli bileşenlerinden gelen logları yakalamak, işlemek ve depolamak için kullanılır. Pino.js, hızlı, hafif ve düşük bellek tüketimine sahiptir, bu yüzden performansı etkilemeden büyük miktarlarda log verisini işleyebilir.
+
+expres prototip küçük orta
+fastify küçük orta büyük
+NestJS büyük komplike projeler için
