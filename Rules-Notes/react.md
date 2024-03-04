@@ -9,3 +9,8 @@ useCallback	| Component'ler arasında fonksiyonları referans olarak paylaşmak 
 
 ek kütüphane
 useSWR		| bir istekte bulunulduğunda önbelleğe alınmış son veriyi (stale) hemen gösterir ve ardından arkada planda yeni veriyi alır (revalidate).
+
+
+react redux 				- durum yönetimi 	state
+react redux RTK Query (redux toolkit)	- veri yönetimi için redux eklentisi
+react query 				- veri yönetimi 	api için kullanılır

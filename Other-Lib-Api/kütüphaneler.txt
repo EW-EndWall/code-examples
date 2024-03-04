@@ -1,0 +1,46 @@
+nuxtjs vue seo, routing, ssr-ssg
+
+https://tauri.app/ bunada bakılcak masaustu uygulama yapmak için electron alternatifi
+tauri electron a göre daha iyi duruyo dosya boyutu kaynak kullanım ve gereksinimler olarak cok daha hafif
+
+https://playwright.dev/ uygulama test aracı bakılcak
+
+
+
+
+
+front end form kontroleri , örnerin nick secme veya arama işleminde back en üzerinden kontrol sağlıyor
+vee-validate
+
+back end üzerinden json tabanlı kontrol sağlıyor
+joi
+
+HTTP başlıklarını ayarlayarak çeşitli güvenlik önlemleri sağlar
+helmet
+
+xss giden veriyi kontrol ediyor yani text içeriğindeki js kodlarını temizleme
+dompurify 
+
+api, gelen veriyi kontrol ediyor
+express-validator 
+
+şifre şifreleme
+bcrypt
+
+genel amaclı şifreleme ve cözme
+crypto-js
+
+mongodb bağlantısı ve sorgu validasyonu
+mongoose
+
+PostgreSQL, MySQL, CockroachDB, MSSQL, SQLite3, Oracle - db bağlantısı ve sorgu validasyonu
+knex
+
+env ayar dosyası için
+dotenv
+
+pinojs JavaScript loglama kütüphanesi Uygulamalarınızın çeşitli bileşenlerinden gelen logları yakalamak, işlemek ve depolamak için kullanılır. Pino.js, hızlı, hafif ve düşük bellek tüketimine sahiptir, bu yüzden performansı etkilemeden büyük miktarlarda log verisini işleyebilir.
+
+expres prototip küçük orta
+fastify küçük orta büyük
+NestJS büyük komplike projeler için
