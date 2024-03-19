@@ -1,0 +1,9 @@
+Kod	Çıktı
+\'	tek alıntı
+\"	çift ​​tırnak
+\\	ters eğik çizgi
+\n	Yeni hat
+\t	sekme
+\r	satırbaşı
+\b	geri tuşu
+\f	form besleme

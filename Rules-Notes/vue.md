@@ -4,11 +4,11 @@ mixins				| Import edilen componentin data, computed, methods... gibi özellikle
 
 data	 			| State oluşturmak için vue 2.
 ref				| State oluşturmak için vue 3, DOM elementi için kullanır.
-computed 			| Belirlenen veri değiştiği zaman tekrar calışır. (başka verilere dayalı olarak çalışan işlemler) sepet hesaplama vs
+computed 			| Belirlenen veri değiştiği zaman tekrar calışır. önbele alıyor
 
 created 			| Bileşenin oluşturulma aşamasında gereken işlemleri yapmak için
-mounted				| DOM'a eklenmeden önce yapılması gereken işleri yapmak için kullanır.
-onMounted			| DOM'a eklendikten sonra yapılması gereken işleri yapmak için kullanır.
+mounted				| DOM'a eklenmeden önce yapılması gereken işleri yapmak için kullanır. (vue3)
+onMounted			| DOM'a eklendikten sonra yapılması gereken işleri yapmak için kullanır. (vue2)
 
 watch 				| Bileşeninizin state'indeki değişiklikleri izlemek için kullanılır. (bir veya daha fazla verilrde değişiklik olduğunda) api vs
 

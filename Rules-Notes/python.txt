@@ -1,0 +1,6 @@
+
+pip güncelleme
+py -m pip install --upgrade pip
+
+modül indirme
+py -m pip install modüle
