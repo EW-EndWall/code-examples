@@ -1,3 +1,17 @@
+özet
+
+git init: Yeni bir Git deposu oluşturmak için kullanılır.
+git clone: Git'deki bir depoyu bilgisayarınıza klonlar.
+git commit: Stage'deki değişiklikleri özetleyen kısa bir açıklama ekler.
+git push: Bilgisayarınızdaki commit'leri Git depoya gönderir.
+git pull: Git depodaki en son değişiklikleri bilgisayardaki depoya getirir.
+git status: Hangi dosyaların değiştirilmiş olduğunu görmenizi sağlar.
+git branch: Mevcut branch'leri listeler veya yenisini oluşturur.
+git checkout: Farklı bir branch'e geçiş yaparsınız.
+git merge: Çalıştığınız branch ile farklı bir branch'i birleştirebilirsiniz.
+
+------------------------------------------------------------------------------------------
+
 Depo Oluşturma ve Klonlama:
     git init: Yeni bir Git deposu oluşturur.
     git clone <repo-url>: Uzak bir depoyu bilgisayarınıza kopyalar.
