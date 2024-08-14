@@ -1,0 +1,12 @@
+Ubuntu: 18.04, 20.04, 22.04, 24.04
+
+1.
+apt-get update; apt-get install wget
+
+2.
+wget http://repo.fastpanel.direct/install_fastpanel.sh -O - | bash -
+
+---------------------------------
+Congratulations! FASTPANEL successfully installed and available for you at https://1.2.3.4:8888
+Login: fastuser
+Password: password
