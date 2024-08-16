@@ -1,3 +1,7 @@
+apt-get update && apt-get upgrade -y
+
+passwd					şifre değiştirme
+
 pwd 					bulunduğun dizini öğrenme
 ls 					dosya listeleme
 ls -all 				gizli dosyalar dahil
@@ -24,6 +28,8 @@ dpkg -l 				Sistemde yüklü olan paketleri listeler.
 
 unema -a				işletim sistemi hakkında bilgi
 lsb_release --a				sistem detay bilgisi
+top					sistem kaynak kullanımı
+htop 					sistem kaynak kullanımı detaylı
 free -h 				ram kullanımı gb mb
 uptime					sistemin acık olduğu süre
 lsusb					bağlı olan usbler
