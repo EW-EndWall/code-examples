@@ -1,0 +1,68 @@
+
+logo
+android\app\src\main\res
+uygulama ismi
+android\app\src\main\res\values
+android\app\src\main\res\values-tr
+package ismi
+android\app\src\main\res\values/strings.xml
+---------
+
+Build
+
+Adım 1: Android veya iOS Platformu Ekle Platform eklemek için şu komutları çalıştır:
+
+ionic capacitor add android
+ionic capacitor add ios
+
+Adım 2: Build Almak Üretim ortamı için optimize edilmiş bir build almak için şu komutu kullan:
+
+ionic build --prod
+
+Adım 3: Native Projeye Senkronize Et Build alındıktan sonra, Android Studio veya Xcode için projeyi senkronize et:
+
+npx cap sync
+
+Adım 4: Android Studio veya Xcode da Aç Android veya iOS için build işlemi yapmak için:
+
+npx cap open android  # Android Studio için
+npx cap open ios      # Xcode için
+
+build cıktısı
+/android/app/build/outputs/apk/debug/app-debug.apk
+/android/app/build/outputs/apk/release/app-release.apk
+---------
+
+Cordova ile Doğrudan Build Alma Adımları:
+
+Cordova yı Projeye Dahil Etme:
+
+ionic integrations enable cordova
+
+Platformları Ekleme:
+
+ionic cordova platform add android
+ionic cordova platform add ios
+
+Build Alma:
+
+ionic cordova build android --prod
+ionic cordova build ios --prod
+
+Release Build (Üretim Sürümü) Alma:
+
+ionic cordova build android --release --prod
+
+Android APK İmzalama:
+
+Adım 1: Keytool ile bir imza oluştur:
+
+keytool -genkey -v -keystore my-release-key.keystore -alias my-key-alias -keyalg RSA -keysize 2048 -validity 10000
+
+Adım 2: APK dosyasını imzala:
+
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.keystore platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk my-key-alias
+
+Adım 3: APK’yı zipalign ile optimize et:
+
+zipalign -v 4 platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk MyApp.apk
